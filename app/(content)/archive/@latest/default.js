@@ -1,9 +1,9 @@
 import NewsList from "@/components/main-header/news-list"
 import { getLatestNews } from "@/lib/news"
 
-export default function LatestNewsPage(){
+export default async function LatestNewsPage(){
 
-    const latestNews = getLatestNews()
+    const latestNews = await getLatestNews()
     return(
         <>
         <h2>Latest News</h2>
